@@ -13,14 +13,14 @@ const CtaSection = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="/products"
-            className="inline-flex items-center justify-center bg-white text-primary-orange font-semibold py-4 px-8 rounded-lg hover:bg-gray-100 transition-colors text-lg"
+            className="inline-flex items-center justify-center bg-yellow text-primary-orange font-semibold py-4 px-8 rounded-lg  transition-colors text-lg"
           >
             Browse Our Products
             <ArrowRight className="ml-2" size={20} />
           </a>
           <a
             href="/contact"
-            className="inline-flex items-center justify-center border-2 border-white text-white font-semibold py-4 px-8 rounded-lg hover:bg-white hover:text-primary-orange transition-colors text-lg"
+            className="inline-flex items-center justify-center border-2 border-white text-white font-semibold py-4 px-8 rounded-lg  hover:text-primary-orange transition-colors text-lg"
           >
             Contact Us
           </a>
