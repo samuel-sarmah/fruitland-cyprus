@@ -49,7 +49,7 @@ const Navigation = () => {
                   <a
                     href={item.href}
                     className={`text-lg font-medium transition-colors hover:text-primary-orange ${
-                      isScrolled ? 'text-gray-900' : 'text-white'
+                      isScrolled ? 'text-gray-900' : 'text-gray-900'
                     }`}
                   >
                     {item.name}
@@ -64,7 +64,7 @@ const Navigation = () => {
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className={`p-2 rounded-md transition-colors ${
-                isScrolled ? 'text-gray-900' : 'text-white'
+                isScrolled ? 'text-gray-900' : 'text-gray-900'
               }`}
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
