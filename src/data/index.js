@@ -10,7 +10,7 @@ export const heroSlides = [
   },
   {
     id: 2,
-    title: 'Family Farm Since 1940',
+    title: 'Family Farm Since 2000',
     subtitle: 'Three generations of citrus farming expertise delivered directly to your table',
     backgroundImage: '/images/hero-2.jpeg',
     ctaText: 'Our Story',
@@ -37,7 +37,7 @@ export const features = [
   {
     id: 2,
     icon: '👨‍🌾',
-    title: 'Family-Owned Since 1940',
+    title: 'Family-Owned Since 2000',
     description: 'Three generations of farming expertise with a commitment to quality, tradition, and sustainable agricultural practices.',
   },
   {
