@@ -58,7 +58,7 @@ const HeroCarousel = () => {
                 </p>
                 <a
                   href={slide.ctaLink}
-                  className="inline-block bg-primary-orange hover:bg-opacity-90 text-white font-semibold py-4 px-8 rounded-lg transition-colors text-lg"
+                  className="inline-block bg-primary-orange hover:bg-orange-600 text-white font-semibold py-4 px-8 rounded-lg transition-colors text-lg"
                 >
                   {slide.ctaText}
                 </a>
