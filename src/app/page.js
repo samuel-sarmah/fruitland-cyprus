@@ -3,6 +3,7 @@ import HeroCarousel from '@/components/HeroCarousel';
 import FeatureGrid from '@/components/FeatureGrid';
 import ProductShowcase from '@/components/ProductShowcase';
 import PartnersCarousel from '@/components/PartnersCarousel';
+import CtaSection from '@/components/CtaSection';
 import Footer from '@/components/Footer';
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <FeatureGrid />
         <ProductShowcase />
         <PartnersCarousel />
+        <CtaSection />
       </main>
       <Footer />
     </div>
