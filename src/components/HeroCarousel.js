@@ -30,7 +30,7 @@ const HeroCarousel = () => {
               backgroundPosition: 'center',
             }}
           >
-            <div className="absolute inset-0 bg-black bg-opacity-40" />
+            
             <div className="relative z-10 h-full flex items-center justify-center px-4">
               <div className="text-center text-white max-w-4xl">
                 <h1 className="text-4xl md:text-6xl font-bold mb-6 font-display">
