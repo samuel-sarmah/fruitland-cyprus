@@ -2,15 +2,12 @@ const Footer = () => {
   return (
     <footer className="bg-[#1a3d0c] text-white">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
           {/* Logo & About */}
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-bold mb-4 text-[#ffd700]">
+            <h3 className="text-2xl font-bold mb-2 text-[#ffd700]">
               Fruitland Cyprus
             </h3>
-            <p className="text-gray-200 mb-4 leading-relaxed">
-              Family-owned citrus farm providing premium quality fruits directly from our Cyprus orchards to your table since 2000.
-            </p>
             <div className="flex space-x-4">
               <a href="#" className="text-[#ffd700] hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#ffd700] focus:ring-offset-2 focus:ring-offset-[#1a3d0c] rounded">
                 Facebook
@@ -53,7 +50,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-white">Get in Touch</h4>
+            <h4 className="text-lg font-semibold mb-2 text-white">Get in Touch</h4>
             <address className="space-y-2 text-gray-200 not-italic">
               <p>Fruitland Cyprus Farm</p>
               <p>Lefke District</p>
