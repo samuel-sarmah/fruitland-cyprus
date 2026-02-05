@@ -1,4 +1,4 @@
-import { Outbound } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 const CtaSection = () => {
   return (
@@ -16,7 +16,7 @@ const CtaSection = () => {
             className="inline-flex items-center justify-center bg-white text-primary-orange font-semibold py-4 px-8 rounded-lg hover:bg-gray-100 transition-colors text-lg"
           >
             Browse Our Products
-            <Outbound className="ml-2" size={20} />
+            <ArrowRight className="ml-2" size={20} />
           </a>
           <a
             href="/contact"

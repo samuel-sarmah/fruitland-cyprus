@@ -26,9 +26,7 @@ const Navigation = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 shadow-md ${
-        isScrolled ? 'show-on-scroll shadow-lg' : 'bg-primary-orange'
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 shadow-lg bg-gray-900`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
@@ -48,9 +46,7 @@ const Navigation = () => {
                 <li key={item.name}>
                   <a
                     href={item.href}
-                    className={`text-lg font-medium transition-colors hover:text-primary-orange ${
-                      isScrolled ? 'text-gray-900' : 'text-gray-900'
-                    }`}
+                    className="text-lg font-medium transition-colors hover:text-primary-orange text-white"
                   >
                     {item.name}
                   </a>
@@ -63,9 +59,7 @@ const Navigation = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className={`p-2 rounded-md transition-colors ${
-                isScrolled ? 'text-gray-900' : 'text-gray-900'
-              }`}
+              className="p-2 rounded-md transition-colors text-white"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>

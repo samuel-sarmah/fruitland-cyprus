@@ -46,24 +46,6 @@ export const features = [
     title: 'Direct from Orchard to Table',
     description: 'Skip the middleman. Our fruits go straight from our Cyprus orchards to you, ensuring maximum freshness and flavor.',
   },
-  {
-    id: 4,
-    icon: '🌱',
-    title: 'Sustainable Farming',
-    description: 'Eco-friendly farming practices that protect our land, water resources, and support local biodiversity.',
-  },
-  {
-    id: 5,
-    icon: '⭐',
-    title: 'Premium Quality Citrus',
-    description: 'Carefully hand-picked at peak ripeness, ensuring each piece meets our strict quality standards.',
-  },
-  {
-    id: 6,
-    icon: '🏺',
-    title: 'Traditional Methods',
-    description: 'Time-honored farming techniques passed down through generations, enhanced with modern agricultural science.',
-  },
 ];
 
 // Product showcase data
@@ -71,28 +53,28 @@ export const products = [
   {
     id: 1,
     name: 'Premium Cyprus Oranges',
-    image: 'https://placeholder.co/600x400/ff8c42/ffffff?text=Premium+Oranges',
+    image: 'https://images.unsplash.com/photo-1547514701-42782101795e?w=600&h=400&fit=crop',
     description: 'Sweet, juicy oranges perfect for fresh juice or eating straight from the tree.',
     backgroundColor: '#ff8c42',
   },
   {
     id: 2,
     name: 'Fresh Cyprus Lemons',
-    image: 'https://placeholder.co/600x400/ffd300/000000?text=Fresh+Lemons',
+    image: 'https://images.unsplash.com/photo-1590502593747-42a996133562?w=600&h=400&fit=crop',
     description: 'Bright, tangy lemons ideal for cooking, baking, or adding a fresh citrus zing to any dish.',
     backgroundColor: '#ffd300',
   },
   {
     id: 3,
     name: 'Juicy Grapefruits',
-    image: 'https://placeholder.co/600x400/4a7c2e/ffffff?text=Juicy+Grapefruits',
+    image: 'https://images.unsplash.com/photo-1581375321224-79da6fd32f6e?w=600&h=400&fit=crop',
     description: 'Perfectly balanced sweet and tart grapefruits, packed with vitamin C and flavor.',
     backgroundColor: '#4a7c2e',
   },
   {
     id: 4,
     name: 'Sweet Mandarins',
-    image: 'https://placeholder.co/600x400/2d5016/ffffff?text=Sweet+Mandarins',
+    image: 'https://images.unsplash.com/photo-1546548970-71785318a17b?w=600&h=400&fit=crop',
     description: 'Easy-to-peel, seedless mandarins that are perfect for snacking and lunchboxes.',
     backgroundColor: '#2d5016',
   },
@@ -103,26 +85,16 @@ export const partners = [
   {
     id: 1,
     name: 'Cyprus Export Board',
-    logo: 'https://placeholder.co/200x100/000000/ffffff?text=Export+Board',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Cyprus.svg/200x100px-Flag_of_Cyprus.svg.png',
   },
   {
     id: 2,
-    name: 'Mediterranean Foods Co.',
-    logo: 'https://placeholder.co/200x100/4a7c2e/ffffff?text=Foods+Co',
+    name: 'EU Organic Certification',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/EU-organic-label.svg/200x100px-EU-organic-label.svg.png',
   },
   {
     id: 3,
-    name: 'Cyprus Tourism Authority',
-    logo: 'https://placeholder.co/200x100/ff8c42/ffffff?text=Tourism+Auth',
-  },
-  {
-    id: 4,
-    name: 'European Union Organic',
-    logo: 'https://placeholder.co/200x100/2d5016/ffffff?text=Organic',
-  },
-  {
-    id: 5,
-    name: 'Cyprus Agriculture Ministry',
-    logo: 'https://placeholder.co/200x100/ffd300/000000?text=Agri+Ministry',
+    name: 'Cyprus Tourism',
+    logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/e/e2/Cyprus_Tourism_Organisation_Logo.svg/200x100px-Cyprus_Tourism_Organisation_Logo.svg.png',
   },
 ];
