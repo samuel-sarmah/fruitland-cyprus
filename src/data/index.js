@@ -85,16 +85,16 @@ export const partners = [
   {
     id: 1,
     name: 'Cyprus Export Board',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Cyprus.svg/200x100px-Flag_of_Cyprus.svg.png',
+    logo: 'https://api.dicebear.com/7.x/initials/svg?seed=Cyprus&backgroundColor=ff8c42&color=fff',
   },
   {
     id: 2,
-    name: 'EU Organic Certification',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/EU-organic-label.svg/200x100px-EU-organic-label.svg.png',
+    name: 'EU Organic',
+    logo: 'https://api.dicebear.com/7.x/initials/svg?seed=EU&backgroundColor=4a7c2e&color=fff',
   },
   {
     id: 3,
     name: 'Cyprus Tourism',
-    logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/e/e2/Cyprus_Tourism_Organisation_Logo.svg/200x100px-Cyprus_Tourism_Organisation_Logo.svg.png',
+    logo: 'https://api.dicebear.com/7.x/initials/svg?seed=Tourism&backgroundColor=ffd300&color=000',
   },
 ];

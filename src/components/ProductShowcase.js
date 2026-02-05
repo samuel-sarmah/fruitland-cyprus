@@ -37,11 +37,11 @@ const ProductShowcase = () => {
               </div>
               
               {/* Product Image */}
-              <div className="absolute inset-0 flex items-center justify-center opacity-20">
+              <div className="absolute inset-0 flex items-start justify-center opacity-30">
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-full object-cover mix-blend-overlay"
+                  className="w-full h-full object-cover object-top"
                 />
               </div>
             </div>
