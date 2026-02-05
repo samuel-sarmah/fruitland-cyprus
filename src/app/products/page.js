@@ -24,94 +24,58 @@ export default function Products() {
         {/* Products Grid */}
         <section className="py-20 bg-white">
           <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              {products.map((product, index) => (
-                <div 
-                  key={product.id} 
-                  className={`mb-20 rounded-2xl overflow-hidden shadow-2xl ${
-                    index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
-                  } flex flex-col md:flex`}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-0 max-w-6xl mx-auto">
+              {products.map((product) => (
+                <div
+                  key={product.id}
+                  className="relative min-h-[500px] md:min-h-[600px] flex items-end p-8 md:p-12"
+                  style={{ backgroundColor: product.backgroundColor }}
                 >
+                  <div className="relative z-10 text-white max-w-md">
+                    <h3 className="text-2xl md:text-3xl font-bold mb-4">
+                      {product.name}
+                    </h3>
+                    <p className="text-lg mb-6 leading-relaxed">
+                      {product.description}
+                    </p>
+                    <div className="space-y-3 mb-6">
+                      <div className="text-sm opacity-90">
+                        ✓ Sun-ripened for maximum sweetness
+                      </div>
+                      <div className="text-sm opacity-90">
+                        ✓ Hand-picked at peak freshness
+                      </div>
+                      <div className="text-sm opacity-90">
+                        ✓ No artificial preservatives
+                      </div>
+                    </div>
+                    <div className="flex items-center justify-between mb-4">
+                      <div className="text-sm">
+                        <span className="font-semibold">Available:</span> Year-round
+                      </div>
+                      <div className="text-sm">
+                        <span className="font-semibold">Origin:</span> Cyprus
+                      </div>
+                    </div>
+                    <a
+                      href="/contact"
+                      className={`inline-block font-semibold py-3 px-6 rounded-lg transition-colors ${
+                        product.backgroundColor === '#ffd300' || product.backgroundColor === '#ff8c42'
+                          ? 'bg-white text-gray-900 hover:bg-gray-100'
+                          : 'bg-white text-gray-900 hover:bg-gray-100'
+                      }`}
+                    >
+                      Order Now
+                    </a>
+                  </div>
+                  
                   {/* Product Image */}
-                  <div className="md:w-1/2 h-64 md:h-96">
+                  <div className="absolute inset-0 flex items-start justify-center opacity-40">
                     <img
                       src={product.image}
                       alt={product.name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-2/3 object-cover object-top"
                     />
-                  </div>
-                  
-                  {/* Product Details */}
-                  <div className="md:w-1/2 p-8 md:p-12 flex flex-col justify-center" 
-                       style={{ backgroundColor: product.backgroundColor }}>
-                    <div className="text-white">
-                      <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                        {product.name}
-                      </h2>
-                      
-                      <div className="space-y-4 mb-8">
-                        {/* Product Features */}
-                        <div className="bg-white bg-opacity-20 rounded-lg p-4">
-                          <h3 className="text-xl font-semibold mb-2">Key Features</h3>
-                          <ul className="space-y-2">
-                            <li className="flex items-center">
-                              <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                              Sun-ripened for maximum sweetness
-                            </li>
-                            <li className="flex items-center">
-                              <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                              Hand-picked at peak freshness
-                            </li>
-                            <li className="flex items-center">
-                              <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                              No artificial preservatives
-                            </li>
-                            <li className="flex items-center">
-                              <span className="w-2 h-2 bg-white rounded-full mr-3"></span>
-                              Rich in vitamins and minerals
-                            </li>
-                          </ul>
-                        </div>
-
-                        {/* Nutritional Info */}
-                        <div className="bg-white bg-opacity-20 rounded-lg p-4">
-                          <h3 className="text-xl font-semibold mb-2">Nutritional Highlights</h3>
-                          <div className="grid grid-cols-2 gap-4 text-sm">
-                            <div>
-                              <span className="font-semibold">Vitamin C:</span> 150% DV
-                            </div>
-                            <div>
-                              <span className="font-semibold">Fiber:</span> 12% DV
-                            </div>
-                            <div>
-                              <span className="font-semibold">Calories:</span> 60 per serving
-                            </div>
-                            <div>
-                              <span className="font-semibold">Natural:</span> 100%
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
-                      <p className="text-lg leading-relaxed mb-8">
-                        {product.description}
-                      </p>
-
-                      <div className="space-y-4">
-                        <div className="flex items-center space-x-6">
-                          <div className="text-sm">
-                            <span className="font-semibold">Available:</span> Year-round
-                          </div>
-                          <div className="text-sm">
-                            <span className="font-semibold">Origin:</span> Cyprus
-                          </div>
-                        </div>
-                        
-                        <button className="bg-white text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                          Order Now
-                        </button>
-                      </div>
-                    </div>
                   </div>
                 </div>
               ))}
