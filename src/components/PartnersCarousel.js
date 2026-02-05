@@ -1,24 +1,11 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { partners } from '@/data';
+import useCarousel from '@/hooks/useCarousel';
 
 const PartnersCarousel = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % partners.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prev) => (prev === 0 ? partners.length - 1 : prev - 1));
-  };
-
-  useEffect(() => {
-    const timer = setInterval(nextSlide, 4000);
-    return () => clearInterval(timer);
-  }, []);
+  const { currentIndex, next: nextSlide, prev: prevSlide, goTo: goToSlide } = useCarousel(partners, 4000);
 
   return (
     <section className="py-16 bg-gray-50">
@@ -72,7 +59,7 @@ const PartnersCarousel = () => {
             {partners.map((partner) => (
               <button
                 key={partner.id}
-                onClick={() => setCurrentIndex(partner.id - 1)}
+                onClick={() => goToSlide(partner.id - 1)}
                 className={`w-3 h-3 rounded-full transition-all ${
                   currentIndex === partner.id - 1
                     ? 'bg-primary-orange w-8'

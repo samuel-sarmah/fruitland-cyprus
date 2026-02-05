@@ -1,35 +1,18 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { heroSlides } from '@/data';
+import useCarousel from '@/hooks/useCarousel';
 import { useAppStore } from '@/lib/store';
 
 const HeroCarousel = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
   const { setCurrentSlide: setGlobalSlide } = useAppStore();
+  const { currentIndex: currentSlide, next: nextSlide, prev: prevSlide, goTo: goToSlide } = useCarousel(heroSlides, 6000);
 
-  const nextSlide = () => {
-    const newSlide = (currentSlide + 1) % heroSlides.length;
-    setCurrentSlide(newSlide);
-    setGlobalSlide(newSlide);
-  };
-
-  const prevSlide = () => {
-    const newSlide = currentSlide === 0 ? heroSlides.length - 1 : currentSlide - 1;
-    setCurrentSlide(newSlide);
-    setGlobalSlide(newSlide);
-  };
-
-  const goToSlide = (index) => {
-    setCurrentSlide(index);
+  const handleSlideChange = (index) => {
+    goToSlide(index);
     setGlobalSlide(index);
   };
-
-  useEffect(() => {
-    const timer = setInterval(nextSlide, 6000);
-    return () => clearInterval(timer);
-  }, [currentSlide]);
 
   return (
     <div className="relative h-screen overflow-hidden">
@@ -89,7 +72,7 @@ const HeroCarousel = () => {
         {heroSlides.map((slide) => (
           <button
             key={slide.id}
-            onClick={() => goToSlide(slide.id - 1)}
+            onClick={() => handleSlideChange(slide.id - 1)}
             className={`hero-dot ${
               currentSlide === slide.id - 1 ? 'active' : ''
             }`}
