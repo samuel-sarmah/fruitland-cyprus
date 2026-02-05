@@ -41,7 +41,7 @@ const HeroCarousel = () => {
                 </p>
                 <a
                   href={slide.ctaLink}
-                  className="inline-block bg-primary-orange hover:bg-orange-600 text-white font-semibold py-4 px-8 rounded-lg transition-colors text-lg"
+                  className="inline-block bg-yellow-600 text-white font-semibold py-4 px-8 rounded-lg transition-colors text-lg"
                 >
                   {slide.ctaText}
                 </a>
@@ -51,22 +51,7 @@ const HeroCarousel = () => {
         ))}
       </div>
 
-      {/* Navigation Arrows */}
-      <button
-        onClick={prevSlide}
-        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-3 rounded-full transition-all"
-        aria-label="Previous slide"
-      >
-        <ChevronLeft size={24} />
-      </button>
-      <button
-        onClick={nextSlide}
-        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white bg-opacity-20 hover:bg-opacity-30 text-white p-3 rounded-full transition-all"
-        aria-label="Next slide"
-      >
-        <ChevronRight size={24} />
-      </button>
-
+      
       {/* Dots Navigation */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex space-x-2">
         {heroSlides.map((slide) => (

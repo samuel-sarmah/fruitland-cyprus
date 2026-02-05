@@ -8,8 +8,8 @@ const Footer = () => {
             <h3 className="text-2xl font-bold mb-4 text-primary-yellow">
               Fruitland Cyprus
             </h3>
-            <p className="text-gray-300 mb-6 leading-relaxed">
-              Family-owned citrus farm providing premium quality fruits directly from our Cyprus orchards to your table since 1985.
+            <p className="text-white mb-2 leading-relaxed opacity-90">
+              Family-owned citrus farm providing premium quality fruits directly from our Cyprus orchards to your table since 1940.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-primary-yellow hover:text-white transition-colors">
@@ -29,22 +29,22 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="/about" className="text-gray-300 hover:text-primary-yellow transition-colors">
+                <a href="/about" className="text-white hover:text-primary-yellow transition-colors">
                   About Us
                 </a>
               </li>
               <li>
-                <a href="/products" className="text-gray-300 hover:text-primary-yellow transition-colors">
+                <a href="/products" className="text-white hover:text-primary-yellow transition-colors">
                   Our Products
                 </a>
               </li>
               <li>
-                <a href="/contact" className="text-gray-300 hover:text-primary-yellow transition-colors">
+                <a href="/contact" className="text-white hover:text-primary-yellow transition-colors">
                   Contact
                 </a>
               </li>
               <li>
-                <a href="/sustainability" className="text-gray-300 hover:text-primary-yellow transition-colors">
+                <a href="/sustainability" className="text-white hover:text-primary-yellow transition-colors">
                   Sustainability
                 </a>
               </li>
@@ -54,7 +54,7 @@ const Footer = () => {
           {/* Contact Info */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Get in Touch</h4>
-            <div className="space-y-2 text-gray-300">
+            <div className="space-y-2 text-white opacity-90">
               <p>Fruitland Cyprus Farm</p>
               <p>Limassol District</p>
               <p>Cyprus, EU</p>
@@ -64,7 +64,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+        <div className="border-t border-gray-600 mt-8 pt-8 text-center text-white opacity-75">
           <p>&copy; 2024 Fruitland Cyprus. All rights reserved.</p>
         </div>
       </div>

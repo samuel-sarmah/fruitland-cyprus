@@ -10,7 +10,7 @@ export const heroSlides = [
   },
   {
     id: 2,
-    title: 'Family Farm Since 1985',
+    title: 'Family Farm Since 1940',
     subtitle: 'Three generations of citrus farming expertise delivered directly to your table',
     backgroundImage: '/images/hero-2.jpeg',
     ctaText: 'Our Story',
@@ -37,7 +37,7 @@ export const features = [
   {
     id: 2,
     icon: '👨‍🌾',
-    title: 'Family-Owned Since 1985',
+    title: 'Family-Owned Since 1940',
     description: 'Three generations of farming expertise with a commitment to quality, tradition, and sustainable agricultural practices.',
   },
   {
@@ -59,16 +59,16 @@ export const products = [
   },
   {
     id: 2,
-    name: 'Fresh Cyprus Lemons',
-    image: 'https://images.unsplash.com/photo-1590502593747-42a996133562?w=600&h=400&fit=crop',
-    description: 'Bright, tangy lemons ideal for cooking, baking, or adding a fresh citrus zing to any dish.',
+    name: 'Sweet Cyprus Mangoes',
+    image: 'https://images.unsplash.com/photo-1553279768-865429fa0078?w=600&h=400&fit=crop',
+    description: 'Juicy, tropical mangoes with perfect sweetness and rich flavor, grown in Cyprus Mediterranean climate.',
     backgroundColor: '#ffd300',
   },
   {
     id: 3,
-    name: 'Juicy Grapefruits',
-    image: 'https://images.unsplash.com/photo-1581375321224-79da6fd32f6e?w=600&h=400&fit=crop',
-    description: 'Perfectly balanced sweet and tart grapefruits, packed with vitamin C and flavor.',
+    name: 'Premium Cyprus Avocados',
+    image: 'https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?w=600&h=400&fit=crop',
+    description: 'Rich, creamy avocados with perfect texture and nutrition, ideal for Mediterranean cuisine.',
     backgroundColor: '#4a7c2e',
   },
   {

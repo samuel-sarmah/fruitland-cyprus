@@ -4,7 +4,7 @@ const ProductShowcase = () => {
   return (
     <section className="py-16 md:py-24">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-black">
           Our Premium Citrus Selection
         </h2>
         
@@ -37,11 +37,11 @@ const ProductShowcase = () => {
               </div>
               
               {/* Product Image */}
-              <div className="absolute inset-0 flex items-start justify-center opacity-30">
+              <div className="absolute inset-0 flex items-start justify-center opacity-40">
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-2/3 object-cover object-top"
                 />
               </div>
             </div>

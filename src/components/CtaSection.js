@@ -2,7 +2,7 @@ import { ArrowRight } from 'lucide-react';
 
 const CtaSection = () => {
   return (
-    <section className="py-20 bg-gradient-to-r from-primary-orange to-yellow-400 text-white">
+    <section className="py-20  bg-yellow-500 text-white">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">
           Ready to Taste the Best Citrus from Cyprus?
