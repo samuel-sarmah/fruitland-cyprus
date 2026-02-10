@@ -34,33 +34,28 @@ export default function About() {
                     <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">
                       Where Tradition Meets Innovation
                     </h2>
-                    <p className="text-sm text-gray-600 leading-relaxed mb-4">
-                      In 1985, Andreas Papadopoulos planted his first 50 orange trees in the fertile
-                      soil of Cyprus's Limassol district. What began as a modest family operation
-                      has blossomed into a 200-acre agricultural enterprise, serving customers across
-                      Europe and beyond.
+                    <p className="text-sm text-black-600 leading-relaxed mb-4">
+                      In 2003, <strong className='text-gray-900'> Erol Hasin Baycan </strong> returned to Cyprus after time spent in England, taking over the family farm that had been nurtured by his parents for years.
+                      What began as a traditional farm has transformed into something special—a place where passion for quality meets innovation in agriculture.
                     </p>
-                    <p className="text-sm text-gray-600 leading-relaxed">
-                      Today, three generations of the Papadopoulos family work together - combining
-                      time-honored Cypriot farming traditions with modern sustainable practices
-                      to deliver the finest citrus fruits the Mediterranean has to offer.
+                    <p className="text-sm text-black-600 leading-relaxed">
+                      With guidance from expert agronomists and insights from Israeli farming pioneers, <strong>Erol</strong> invested in cultivating premium tropical and subtropical fruits.
+                      Today, Fruitland Cyprus specializes in avocados, mangoes, and citrus varieties that thrive in Cyprus’s unique Mediterranean climate.
                     </p>
                   </div>
                 </div>
                 <div className="grid ">
                   <div className="text-center group cursor-pointer">
                     <div className="relative mb-3 overflow-hidden rounded-xl">
-                      <div className=" aspect-square bg-orange-600 flex items-center justify-center transform transition-transform group-hover:scale-105">
+                      <div className=" bg-orange-600 flex items-center justify-center transform transition-transform group-hover:scale-105">
                         <div className="text-white text-center">
                           <div className="text-3xl mb-1">👨‍🌾</div>
-                          <div className="text-base font-bold">Andreas</div>
-                          <div className="text-xs opacity-80">Founder</div>
                         </div>
                       </div>
                     </div>
-                    <h4 className="text-base font-bold mb-1 text-gray-900">Andreas Papadopoulos</h4>
+                    <h4 className="text-base font-bold mb-1 text-gray-900">Erol Hasin Baycan</h4>
                     <p className="text-primary-orange font-semibold mb-2 text-sm">Founder & Visionary</p>
-                    <p className="text-gray-600 leading-relaxed text-sm">
+                    <p className="text-black-600 leading-relaxed text-sm">
                       The patriarch who started it all. His dedication to quality over quantity
                       established our reputation for excellence that continues to this day.
                     </p>
@@ -76,44 +71,42 @@ export default function About() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center mb-8">
               <h2 className="text-2xl md:text-3xl font-bold mb-3 text-gray-900">
-                Our Journey Through Time
+                What makes us different
               </h2>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                Key milestones that shaped our family farm into what it is today
+              <p className="text-sm text-black-600 leading-relaxed">
+                Key milestones that shaped our farm into what it is today
               </p>
             </div>
 
             <div className="max-w-5xl mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
                 <div className="bg-white p-5 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                  <div className="text-2xl font-bold text-primary-orange mb-2">2000</div>
-                  <h3 className="text-base font-bold mb-2 text-gray-900">The Beginning</h3>
-                  <p className="text-gray-600 leading-relaxed text-sm">
-                    Andreas plants first 50 orange trees, establishing our commitment to quality over quantity.
+                  <h3 className="text-base font-bold mb-2 text-gray-900">Modern Techniques</h3>
+                  <p className="text-black-600 leading-relaxed text-sm">
+                    Fruitland Cyprus remains a family-run operation, but we embrace the latest advances in irrigation and cultivation.
+                    We combine traditional care with cutting-edge agricultural methods to produce fruit that’s both exceptional in quality and responsibly grown.
                   </p>
                 </div>
 
                 <div className="bg-white p-5 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                  <div className="text-2xl font-bold text-secondary-green mb-2">2010</div>
-                  <h3 className="text-base font-bold mb-2 text-gray-900">Expansion</h3>
-                  <p className="text-gray-600 leading-relaxed text-sm">
-                    Elena introduces organic practices and expands to 100 acres. First exports to Europe begin.
+                  <h3 className="text-base font-bold mb-2 text-gray-900">Pesticide-Free</h3>
+                  <p className="text-black-600 leading-relaxed text-sm">
+                    PromiseYour health matters to us. That’s why we’re committed to pesticide-free cultivation practices, ensuring every piece of fruit meets the highest standards of quality and safety.
                   </p>
                 </div>
 
                 <div className="bg-white p-5 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                  <div className="text-2xl font-bold text-primary-yellow mb-2">2015</div>
-                  <h3 className="text-base font-bold mb-2 text-gray-900">Innovation</h3>
-                  <p className="text-gray-600 leading-relaxed text-sm">
-                    Nikos joins, bringing quality systems and online sales. Farm reaches 200 acres.
+                  <h3 className="text-base font-bold mb-2 text-gray-900">Freshness You Can Taste</h3>
+                  <p className="text-black-600 leading-relaxed text-sm">
+                    We harvest daily for the local market, which means the fruit you enjoy was likely growing on our trees just hours before.
+                    This commitment to freshness ensures peak flavor and nutrition in every bite.
                   </p>
                 </div>
-
                 <div className="bg-white p-5 rounded-xl shadow-md hover:shadow-lg transition-shadow">
-                  <div className="text-2xl font-bold text-green-600 mb-2">Today</div>
-                  <h3 className="text-base font-bold mb-2 text-gray-900">Global Impact</h3>
-                  <p className="text-gray-600 leading-relaxed text-sm">
-                    Serving 15+ countries with premium citrus fruits, sustainable practices, and family values.
+                  <h3 className="text-base font-bold mb-2 text-gray-900">Our Farm</h3>
+                  <p className="text-back-600 leading-relaxed text-sm">
+                    Every tree receives individual attention, and every harvest is handled with care. 
+                    This is farming the way it should be—personal, purposeful, and rooted in respect for the land.
                   </p>
                 </div>
               </div>
@@ -126,7 +119,7 @@ export default function About() {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto text-center">
               <div className="p-3">
-                <div className="text-3xl md:text-4xl font-bold mb-1">200+</div>
+                <div className="text-3xl md:text-4xl font-bold mb-1">50+</div>
                 <div className="text-sm opacity-90">Acres of Orchards</div>
               </div>
               <div className="p-3">
@@ -138,7 +131,7 @@ export default function About() {
                 <div className="text-sm opacity-90">Countries Served</div>
               </div>
               <div className="p-3">
-                <div className="text-3xl md:text-4xl font-bold mb-1">39</div>
+                <div className="text-3xl md:text-4xl font-bold mb-1">25+</div>
                 <div className="text-sm opacity-90">Years of Excellence</div>
               </div>
             </div>

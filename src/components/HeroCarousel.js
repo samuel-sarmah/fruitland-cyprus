@@ -33,10 +33,10 @@ const HeroCarousel = () => {
             
             <div className="relative z-10 h-full flex items-center justify-center px-4">
               <div className="text-center text-white max-w-4xl drop-shadow-lg">
-                <h1 className="text-4xl md:text-6xl font-bold mb-6 font-display drop-shadow-2xl">
+                <h1 className="text-6xl md:text-6xl font-bold mb-6 font-display drop-shadow-2xl">
                   {slide.title}
                 </h1>
-                <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto drop-shadow-xl">
+                <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto drop-shadow-xl font-bold">
                   {slide.subtitle}
                 </p>
                 <a
