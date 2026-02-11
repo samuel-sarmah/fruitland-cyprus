@@ -5,10 +5,10 @@ const CtaSection = () => {
     <section className="py-20  bg-yellow-500 text-white">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">
-          Ready to Taste the Best Citrus from Cyprus?
+          Ready to Taste the Best Fruits from Cyprus?
         </h2>
         <p className="text-lg md:text-xl mb-8 max-w-3xl mx-auto">
-          Join our family of satisfied customers who enjoy premium quality citrus fruits delivered fresh from our Cyprus orchards.
+          Join our family of satisfied customers who enjoy premium quality fruits delivered fresh from our Cyprus orchards.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
