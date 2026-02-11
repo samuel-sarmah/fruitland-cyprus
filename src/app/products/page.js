@@ -21,7 +21,7 @@ export default function Products() {
           </div>
         </section>
 
-        {/* Product Gallery */}
+        {/* Product Gallery with Categories */}
         <ProductGallery />
       </main>
       <Footer />

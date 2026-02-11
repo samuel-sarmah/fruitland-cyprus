@@ -15,7 +15,7 @@ const HeroCarousel = () => {
   };
 
   return (
-    <div className="relative h-screen overflow-hidden">
+    <div className="relative h-screen overflow-hidden bg-black">
       {/* Slides */}
       <div className="relative h-full">
         {heroSlides.map((slide) => (

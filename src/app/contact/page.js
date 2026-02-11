@@ -57,22 +57,16 @@ export default function Contact() {
                     <div className="bg-white rounded-2xl p-0">
                       <h3 className="text-xl font-bold mb-4 text-gray-900">Follow Our Journey</h3>
                       <div className="grid grid-cols-3 gap-4">
-                        <a href="#" className="group">
+                        <a href="https://m.facebook.com/fruitlandcyprus/" className="group">
                           <div className="bg-gray-200 p-4 rounded-lg text-center ">
                             <Facebook className="mx-auto mb-2" />
                             <div className="text-sm font-medium">Facebook</div>
                           </div>
                         </a>
-                        <a href="#" className="group">
+                        <a href="https://www.instagram.com/fruitlandcyprus?igsh=MXBtejd5NGRjOWlncQ==" className="group">
                           <div className="bg-gray-200 p-4 rounded-lg text-center ">
                             <Instagram className="mx-auto mb-2" />
                             <div className="text-sm font-medium">Instagram</div>
-                          </div>
-                        </a>
-                        <a href="#" className="group">
-                          <div className="bg-gray-200 p-4 rounded-lg text-center ">
-                            <Linkedin className="mx-auto mb-2" />
-                            <div className="text-sm font-medium">LinkedIn</div>
                           </div>
                         </a>
                       </div>
