@@ -34,7 +34,7 @@ const Navigation = () => {
           <div className="flex-shrink-0">
             <img 
               src="/images/logo.jpeg" 
-              alt="Fruitland CY - Cyprus Citrus Farm"
+              alt="Fruitlandcyprus - Cyprus Fruit Farm"
               className="h-10 w-auto object-contain md:h-12"
             />
           </div>
