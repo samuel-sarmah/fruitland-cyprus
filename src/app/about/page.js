@@ -14,7 +14,7 @@ export default function About() {
                 Generations of Excellence
               </h1>
               <p className="text-base md:text-lg leading-relaxed opacity-95 max-w-3xl mx-auto">
-                From a small family orchard to Cyprus's premier citrus destination since 1985
+                From a small family orchard to Cyprus's premier fruit destination since 2003
               </p>
             </div>
           </div>
@@ -40,7 +40,7 @@ export default function About() {
                     </p>
                     <p className="text-sm text-black-600 leading-relaxed">
                       With guidance from expert agronomists and insights from Israeli farming pioneers, <strong>Erol</strong> invested in cultivating premium tropical and subtropical fruits.
-                      Today, Fruitland Cyprus specializes in avocados, mangoes, and citrus varieties that thrive in Cyprus’s unique Mediterranean climate.
+                      Today, Fruitlandcyprus specializes in avocados, mangoes, and fruit varieties that thrive in Cyprus's unique Mediterranean climate.
                     </p>
                   </div>
                 </div>
@@ -48,8 +48,10 @@ export default function About() {
                   <div className="text-center group cursor-pointer">
                     <div className="relative mb-3 overflow-hidden rounded-xl">
                       <div className=" bg-orange-600 flex items-center justify-center transform transition-transform group-hover:scale-105">
-                        <div className="text-white text-center">
-                          <div className="text-3xl mb-1">👨‍🌾</div>
+                        <div className="mb-6 flex justify-center">
+                          <div className="text-5xl group-hover:scale-110 transition-transform duration-300">
+                            '👨‍🌾
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -83,7 +85,7 @@ export default function About() {
                 <div className="bg-white p-5 rounded-xl shadow-md hover:shadow-lg transition-shadow">
                   <h3 className="text-base font-bold mb-2 text-gray-900">Modern Techniques</h3>
                   <p className="text-black-600 leading-relaxed text-sm">
-                    Fruitland Cyprus remains a family-run operation, but we embrace the latest advances in irrigation and cultivation.
+                    Fruitlandcyprus embraces the latest advances in irrigation and cultivation.
                     We combine traditional care with cutting-edge agricultural methods to produce fruit that’s both exceptional in quality and responsibly grown.
                   </p>
                 </div>
@@ -91,7 +93,7 @@ export default function About() {
                 <div className="bg-white p-5 rounded-xl shadow-md hover:shadow-lg transition-shadow">
                   <h3 className="text-base font-bold mb-2 text-gray-900">Pesticide-Free</h3>
                   <p className="text-black-600 leading-relaxed text-sm">
-                    PromiseYour health matters to us. That’s why we’re committed to pesticide-free cultivation practices, ensuring every piece of fruit meets the highest standards of quality and safety.
+                    Your health matters to us. That's why we're committed to pesticide-free cultivation practices, ensuring every piece of fruit meets the highest standards of quality and safety.
                   </p>
                 </div>
 
@@ -105,7 +107,7 @@ export default function About() {
                 <div className="bg-white p-5 rounded-xl shadow-md hover:shadow-lg transition-shadow">
                   <h3 className="text-base font-bold mb-2 text-gray-900">Our Farm</h3>
                   <p className="text-back-600 leading-relaxed text-sm">
-                    Every tree receives individual attention, and every harvest is handled with care. 
+                    Every tree receives individual attention, and every harvest is handled with care.
                     This is farming the way it should be—personal, purposeful, and rooted in respect for the land.
                   </p>
                 </div>
@@ -124,10 +126,10 @@ export default function About() {
               </div>
               <div className="p-3">
                 <div className="text-3xl md:text-4xl font-bold mb-1">4,000+</div>
-                <div className="text-sm opacity-90">Citrus Trees</div>
+                <div className="text-sm opacity-90">Fruit Trees</div>
               </div>
               <div className="p-3">
-                <div className="text-3xl md:text-4xl font-bold mb-1">15</div>
+                <div className="text-3xl md:text-4xl font-bold mb-1">2+</div>
                 <div className="text-sm opacity-90">Countries Served</div>
               </div>
               <div className="p-3">
