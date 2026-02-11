@@ -57,7 +57,7 @@ export const productCategories = {
       {
         id: 1,
         name: 'Haden Mango',
-        image: '/images/products/products5.jpeg',
+        image: '/images/products/haden.jpg',
         description: 'The original Florida mango with striking crimson blush over yellow background. Bold, full-bodied flavor perfectly balancing sweetness with subtle acidity. Golden-yellow, smooth flesh that\'s mostly fiber-free near the center.',
         characteristics: ['Medium to Large', 'Red Blush', 'Sweet & Juicy', 'Classic Mango Flavor'],
         season: 'March to May',
@@ -66,7 +66,7 @@ export const productCategories = {
       {
         id: 2,
         name: 'Maya Mango',
-        image: '/images/products/products12.jpeg',
+        image: '/images/products/products5.jpeg',
         description: 'Beautiful mango with orange-red blush on much of the surface. Thin peel and small stone with plump, fulsome flesh. Easy to monitor for ripeness as fruit becomes soft and tender.',
         characteristics: ['Medium Size', 'Silky Smooth', 'Fiberless', 'Sweet & Aromatic'],
         season: 'January to June',
@@ -75,7 +75,7 @@ export const productCategories = {
       {
         id: 3,
         name: 'Tommy Atkins Mango',
-        image: '/images/products/products13.jpeg',
+        image: '/images/products/taktins.jpeg',
         description: 'Most widely grown commercial mango with vibrant green, dark red, and orange-yellow coloring. Oblong shape with thick skin that\'s excellent for shipping. Mild, subtly sweet flavor with tropical fruit notes.',
         characteristics: ['Medium to Large', 'Dark Red Blush', 'Firm Flesh', 'Commercial Grade'],
         season: 'March to July',
@@ -84,7 +84,7 @@ export const productCategories = {
       {
         id: 4,
         name: 'Keitt Mango',
-        image: '/images/products/products14.jpeg',
+        image: '/images/products/keitt.webp',
         description: 'Large late-season mango that stays green even when ripe. Firm, juicy flesh with limited fibers and high citrus notes. Sweet and fruity flavor with excellent storage capability.',
         characteristics: ['Large to Extra-Large', 'Green When Ripe', 'Firm & Juicy', 'Late Season'],
         season: 'August to October',
@@ -93,7 +93,7 @@ export const productCategories = {
       {
         id: 5,
         name: 'Omer/Katsuri Mango',
-        image: '/images/products/products15.jpeg',
+        image: '/images/products/omer.jpg',
         description: 'Premium Asian variety known for exceptional sweetness and aromatic qualities. Smooth, fiberless flesh with rich tropical flavor. Medium-sized fruits perfect for fresh consumption.',
         characteristics: ['Medium Size', 'Fiberless', 'Highly Aromatic', 'Exceptionally Sweet'],
         season: 'June to August',
@@ -108,7 +108,7 @@ export const productCategories = {
       {
         id: 6,
         name: 'Washington Navel Orange',
-        image: '/images/products/product1.jpeg',
+        image: '/images/products/washington.webp',
         description: 'The classic seedless orange that launched California\'s citrus industry. Medium size with smooth, pebbled skin that\'s easy to peel. Sweet, juicy flesh with excellent flavor for eating fresh.',
         characteristics: ['Seedless', 'Easy Peel', 'Sweet & Juicy', 'Winter Season'],
         season: 'November to January',
@@ -117,7 +117,7 @@ export const productCategories = {
       {
         id: 7,
         name: 'Bahia Orange',
-        image: '/images/products/products7.jpeg',
+        image: '/images/products/washington.webp',
         description: 'Original navel orange from Brazil, parent to Washington Navel. Large, round fruits with slightly pebbled orange rind that\'s easily peeled. Exceptional quality and sweet flavor.',
         characteristics: ['Large Size', 'Easy Peel', 'Seedless', 'High Quality'],
         season: 'November to January',
@@ -126,7 +126,7 @@ export const productCategories = {
       {
         id: 8,
         name: 'Cara Cara Navel Orange',
-        image: '/images/products/products10.jpeg',
+        image: '/images/products/caracara.jpg',
         description: 'Special pink-fleshed navel orange with vivid salmon-colored interior. Low-acid, sweet flavor with hints of raspberry. Rich in lycopene antioxidants and vitamin A.',
         characteristics: ['Pink Flesh', 'Low Acid', 'High in Lycopene', 'Sweet & Berry-like'],
         season: 'December to April',
@@ -174,7 +174,7 @@ export const productCategories = {
       {
         id: 12,
         name: 'White Grapefruit',
-        image: '/images/products/products6.jpeg',
+        image: '/images/products/whitegrape.jpg',
         description: 'Large, round fruit with smooth yellow skin and no pink blush. Juicy yellow flesh with sweet-tart flavor and balanced acidity. The least sweet but classic grapefruit taste.',
         characteristics: ['Large Size', 'Yellow Flesh', 'Sweet-Tart', 'Classic Flavor'],
         season: 'Winter to Early Spring',
@@ -183,7 +183,7 @@ export const productCategories = {
       {
         id: 13,
         name: 'Pink Grapefruit',
-        image: '/images/products/products9.jpeg',
+        image: '/images/products/pinkgrape.webp',
         description: 'Medium to large grapefruit with pink-blushed skin and pink flesh. Sweeter than white varieties with rich color and high lycopene content. Perfect for fresh eating and juicing.',
         characteristics: ['Pink Flesh', 'Sweeter', 'Rich in Lycopene', 'Juicy'],
         season: 'Fall to Spring',
@@ -197,12 +197,12 @@ export const productCategories = {
     products: [
       {
         id: 14,
-        name: 'Premium Hass Avocado',
-        image: '/images/products/products3.jpeg',
-        description: 'The classic avocado with dark, pebbled skin that turns black when ripe. Creamy, rich flesh with nutty flavor. Perfect for guacamole, salads, and toast.',
-        characteristics: ['Creamy Texture', 'Nutty Flavor', 'Ripe When Black', 'Versatile'],
-        season: 'Year-round',
-        origin: 'California/Mexico'
+        name: 'Pinkerton Avocado',
+        image: '/images/products/pinkerton.jpg',
+        description: 'Distinguished by its elongated pear shape and deep green, slightly pebbled skin. Pinkerton offers an exceptionally high flesh-to-seed ratio with a small, tight seed that maximizes the creamy, pale-green interior. Its smooth, rich flavor has subtle herbal notes, making it a chef\'s favorite for refined dishes.',
+        characteristics: ['Elongated Shape', 'Small Seed', 'High Flesh Ratio', 'Herbal Notes'],
+        season: 'November to April',
+        origin: 'California, USA'
       },
       {
         id: 15,
@@ -212,15 +212,6 @@ export const productCategories = {
         characteristics: ['Large Size', 'Smooth Skin', 'Mild Flavor', 'Lower Oil'],
         season: 'Year-round',
         origin: 'California'
-      },
-      {
-        id: 16,
-        name: 'Lamb Hass Avocado',
-        image: 'https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?w=600&q=80',
-        description: 'A premium summer hybrid of Hass and Gwen, prized for its larger fruit size and rich, creamy texture. The skin darkens to purplish-black when ripe, with dense, buttery flesh that boasts a complex nutty flavor. Excellent oil content makes it ideal for both fresh eating and culinary applications.',
-        characteristics: ['Large Size', 'Buttery & Rich', 'Summer Season', 'High Oil Content'],
-        season: 'May to November',
-        origin: 'California, USA'
       },
       {
         id: 17,
@@ -233,17 +224,17 @@ export const productCategories = {
       },
       {
         id: 18,
-        name: 'Pinkerton Avocado',
-        image: 'https://images.unsplash.com/photo-1590005354167-6da97870c757?w=600&q=80',
-        description: 'Distinguished by its elongated pear shape and deep green, slightly pebbled skin. Pinkerton offers an exceptionally high flesh-to-seed ratio with a small, tight seed that maximizes the creamy, pale-green interior. Its smooth, rich flavor has subtle herbal notes, making it a chef\'s favorite for refined dishes.',
-        characteristics: ['Elongated Shape', 'Small Seed', 'High Flesh Ratio', 'Herbal Notes'],
-        season: 'November to April',
+        name: 'Lamb Hass Avocado',
+        image: 'https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?w=600&q=80',
+        description: 'A premium summer hybrid of Hass and Gwen, prized for its larger fruit size and rich, creamy texture. The skin darkens to purplish-black when ripe, with dense, buttery flesh that boasts a complex nutty flavor. Excellent oil content makes it ideal for both fresh eating and culinary applications.',
+        characteristics: ['Large Size', 'Buttery & Rich', 'Summer Season', 'High Oil Content'],
+        season: 'May to November',
         origin: 'California, USA'
       },
       {
         id: 19,
         name: 'Reed Avocado',
-        image: 'https://images.unsplash.com/photo-1560155016-7719ae403da4?w=600&q=80',
+        image: '/images/products/reedavoc.webp',
         description: 'A standout summer variety with a distinctive round, softball-like shape and thick green skin that remains green when ripe. Reed\'s golden-yellow flesh is exceptionally creamy and bold in flavor—often described as the most buttery of all avocado varieties. Its large seed pops out cleanly, leaving generous portions of velvety fruit.',
         characteristics: ['Round Shape', 'Stays Green', 'Bold & Buttery', 'Summer Season'],
         season: 'June to October',
