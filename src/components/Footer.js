@@ -6,17 +6,14 @@ const Footer = () => {
           {/* Logo & About */}
           <div className="md:col-span-2">
             <h3 className="text-2xl font-bold mb-2 text-[#ffd700]">
-              Fruitland Cyprus
+              Fruitlandcyprus
             </h3>
             <div className="flex space-x-4">
-              <a href="#" className="text-[#ffd700] hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#ffd700] focus:ring-offset-2 focus:ring-offset-[#1a3d0c] rounded">
+              <a href="https://m.facebook.com/fruitlandcyprus/" className="text-[#ffd700] hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#ffd700] focus:ring-offset-2 focus:ring-offset-[#1a3d0c] rounded">
                 Facebook
               </a>
-              <a href="#" className="text-[#ffd700] hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#ffd700] focus:ring-offset-2 focus:ring-offset-[#1a3d0c] rounded">
+              <a href="https://www.instagram.com/fruitlandcyprus?igsh=MXBtejd5NGRjOWlncQ==" className="text-[#ffd700] hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#ffd700] focus:ring-offset-2 focus:ring-offset-[#1a3d0c] rounded">
                 Instagram
-              </a>
-              <a href="#" className="text-[#ffd700] hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#ffd700] focus:ring-offset-2 focus:ring-offset-[#1a3d0c] rounded">
-                LinkedIn
               </a>
             </div>
           </div>
@@ -52,21 +49,23 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-2 text-white">Get in Touch</h4>
             <address className="space-y-2 text-gray-200 not-italic">
-              <p>Fruitland Cyprus Farm</p>
               <p>Lefke District</p>
-              <p>KKTC, Turkiye</p>
+              <p>North Cyprus</p>
               <p className="mt-4">
-                <a href="tel:+35725123456" className="hover:text-[#ffd700] focus:outline-none focus:ring-2 focus:ring-[#ffd700] rounded">+357 25 123456</a>
+                <a href="tel:+35725123456" className="text-[#ffd700] hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#ffd700] focus:ring-offset-2 focus:ring-offset-[#1a3d0c] rounded">+90 5488687763</a>                
+              </p>
+              <p className="mt-1">
+                <a href="tel:+35725123456" className="text-[#ffd700] hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#ffd700] focus:ring-offset-2 focus:ring-offset-[#1a3d0c] rounded">+357 96384537</a>
               </p>
               <p>
-                <a href="mailto:info@fruitland-cy.com" className="hover:text-[#ffd700] focus:outline-none focus:ring-2 focus:ring-[#ffd700] rounded">info@fruitland-cy.com</a>
+                <a href="mailto: Info@fruitlandcyprus.com" className="text-[#ffd700] hover:text-white transition-colors focus:outline-none focus:ring-2 focus:ring-[#ffd700] focus:ring-offset-2 focus:ring-offset-[#1a3d0c] rounded"> Info@fruitlandcyprus.com</a>
               </p>
             </address>
           </div>
         </div>
 
         <div className="border-t border-gray-500 mt-8 pt-8 text-center text-gray-300">
-          <p>&copy; 2026 Fruitland Cyprus. All rights reserved.</p>
+          <p>&copy; 2026 Fruitlandcyprus. All rights reserved.</p>
         </div>
       </div>
     </footer>
