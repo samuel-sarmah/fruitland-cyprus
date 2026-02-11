@@ -1,8 +1,8 @@
-// Hero slide data for Fruitland Cyprus
+// Hero slide data for Fruitlandcyprus
 export const heroSlides = [
   {
     id: 1,
-    title: 'Sun-Ripened Citrus',
+    title: 'Sun-Ripened Fruits',
     subtitle: 'Premium quality oranges, lemons, and grapefruits grown in the fertile soils of Cyprus',
     backgroundImage: '/images/products/products2.jpeg',
     ctaText: 'Explore Our Fruits',
@@ -11,7 +11,7 @@ export const heroSlides = [
   {
     id: 2,
     title: 'Family Farm Since 2000',
-    subtitle: 'Three generations of citrus farming expertise delivered directly to your table',
+    subtitle: 'Three generations of fruit farming expertise delivered directly to your table',
     backgroundImage: '/images/products/products4.jpeg',
     ctaText: 'Our Story',
     ctaLink: '/about',
@@ -32,7 +32,7 @@ export const features = [
     id: 1,
     icon: '🌞',
     title: 'Sun-Ripened in Cyprus',
-    description: 'Our citrus fruits are nurtured by over 300 days of Mediterranean sunshine annually, creating the perfect growing conditions for sweet, juicy fruits.',
+    description: 'Our fruits are nurtured by over 300 days of Mediterranean sunshine annually, creating the perfect growing conditions for sweet, juicy fruits.',
   },
   {
     id: 2,
@@ -48,114 +48,222 @@ export const features = [
   },
 ];
 
-// Product showcase data
-export const products = [
-  {
-    id: 1,
-    name: 'Premium Cyprus Oranges',
-    image: '/images/products/product1.jpeg',
-    description: 'Sweet, juicy oranges perfect for fresh juice or eating straight from the tree.',
-    backgroundColor: '#ff8c42',
+// Comprehensive product data by category with detailed variety information
+export const productCategories = {
+  mangoes: {
+    name: 'Mangoes',
+    description: 'Premium tropical mangoes from Cyprus sunshine',
+    products: [
+      {
+        id: 1,
+        name: 'Haden Mango',
+        image: '/images/products/products5.jpeg',
+        description: 'The original Florida mango with striking crimson blush over yellow background. Bold, full-bodied flavor perfectly balancing sweetness with subtle acidity. Golden-yellow, smooth flesh that\'s mostly fiber-free near the center.',
+        characteristics: ['Medium to Large', 'Red Blush', 'Sweet & Juicy', 'Classic Mango Flavor'],
+        season: 'March to May',
+        origin: 'Florida, USA'
+      },
+      {
+        id: 2,
+        name: 'Maya Mango',
+        image: '/images/products/products12.jpeg',
+        description: 'Beautiful mango with orange-red blush on much of the surface. Thin peel and small stone with plump, fulsome flesh. Easy to monitor for ripeness as fruit becomes soft and tender.',
+        characteristics: ['Medium Size', 'Silky Smooth', 'Fiberless', 'Sweet & Aromatic'],
+        season: 'January to June',
+        origin: 'Israel'
+      },
+      {
+        id: 3,
+        name: 'Tommy Atkins Mango',
+        image: '/images/products/products13.jpeg',
+        description: 'Most widely grown commercial mango with vibrant green, dark red, and orange-yellow coloring. Oblong shape with thick skin that\'s excellent for shipping. Mild, subtly sweet flavor with tropical fruit notes.',
+        characteristics: ['Medium to Large', 'Dark Red Blush', 'Firm Flesh', 'Commercial Grade'],
+        season: 'March to July',
+        origin: 'Florida, USA'
+      },
+      {
+        id: 4,
+        name: 'Keitt Mango',
+        image: '/images/products/products14.jpeg',
+        description: 'Large late-season mango that stays green even when ripe. Firm, juicy flesh with limited fibers and high citrus notes. Sweet and fruity flavor with excellent storage capability.',
+        characteristics: ['Large to Extra-Large', 'Green When Ripe', 'Firm & Juicy', 'Late Season'],
+        season: 'August to October',
+        origin: 'Florida, USA'
+      },
+      {
+        id: 5,
+        name: 'Omer/Katsuri Mango',
+        image: '/images/products/products15.jpeg',
+        description: 'Premium Asian variety known for exceptional sweetness and aromatic qualities. Smooth, fiberless flesh with rich tropical flavor. Medium-sized fruits perfect for fresh consumption.',
+        characteristics: ['Medium Size', 'Fiberless', 'Highly Aromatic', 'Exceptionally Sweet'],
+        season: 'June to August',
+        origin: 'South Asia'
+      }
+    ]
   },
-  {
-    id: 2,
-    name: 'Sweet tangerines',
-    image: '/images/products/products2.jpeg',
-    description: 'Juicy, tropical tangerines with perfect sweetness and rich flavor, grown in Cyprus Mediterranean climate.',
-    backgroundColor: '#ffd300',
+  oranges: {
+    name: 'Oranges',
+    description: 'Premium Cyprus oranges with rich vitamin C content',
+    products: [
+      {
+        id: 6,
+        name: 'Washington Navel Orange',
+        image: '/images/products/product1.jpeg',
+        description: 'The classic seedless orange that launched California\'s citrus industry. Medium size with smooth, pebbled skin that\'s easy to peel. Sweet, juicy flesh with excellent flavor for eating fresh.',
+        characteristics: ['Seedless', 'Easy Peel', 'Sweet & Juicy', 'Winter Season'],
+        season: 'November to January',
+        origin: 'Bahia, Brazil'
+      },
+      {
+        id: 7,
+        name: 'Bahia Orange',
+        image: '/images/products/products7.jpeg',
+        description: 'Original navel orange from Brazil, parent to Washington Navel. Large, round fruits with slightly pebbled orange rind that\'s easily peeled. Exceptional quality and sweet flavor.',
+        characteristics: ['Large Size', 'Easy Peel', 'Seedless', 'High Quality'],
+        season: 'November to January',
+        origin: 'Bahia, Brazil'
+      },
+      {
+        id: 8,
+        name: 'Cara Cara Navel Orange',
+        image: '/images/products/products10.jpeg',
+        description: 'Special pink-fleshed navel orange with vivid salmon-colored interior. Low-acid, sweet flavor with hints of raspberry. Rich in lycopene antioxidants and vitamin A.',
+        characteristics: ['Pink Flesh', 'Low Acid', 'High in Lycopene', 'Sweet & Berry-like'],
+        season: 'December to April',
+        origin: 'Venezuela'
+      }
+    ]
   },
-  {
-    id: 3,
-    name: 'Premium Avocados',
-    image: '/images/products/products3.jpeg',
-    description: 'Rich, creamy avocados with perfect texture and nutrition, ideal for Mediterranean cuisine.',
-    backgroundColor: '#4a7c2e',
+  tangerines: {
+    name: 'Tangerines',
+    description: 'Sweet and easy-to-peel Cyprus tangerines',
+    products: [
+      {
+        id: 9,
+        name: 'Okitsu Tangerine',
+        image: '/images/products/products8.jpeg',
+        description: 'Early harvest Satsuma tangerine popular for sweet, juicy taste and easy peeling. Medium-sized with smooth pale yellow to orange skin and plump, juicy flesh.',
+        characteristics: ['Early Season', 'Seedless', 'Easy Peel', 'Sweet & Juicy'],
+        season: 'October to November',
+        origin: 'Japan'
+      },
+      {
+        id: 10,
+        name: 'Orri Tangerine',
+        image: '/images/products/products11.jpeg',
+        description: 'Premium Israeli hybrid with exceptional sweetness and fine, well-balanced flavor. Mostly seedless with thin, easy-to-remove skin. Deep orange color and gorgeous appearance.',
+        characteristics: ['Late Season', 'Seedless', 'Very Sweet', 'Easy Peel'],
+        season: 'January to May',
+        origin: 'Israel'
+      },
+      {
+        id: 11,
+        name: 'Eden Tree Tangerine',
+        image: '/images/products/products12.jpeg',
+        description: 'Traditional variety with vibrant orange skin and superior fruit quality. Rich, sweet flavor with perfect balance of sweetness and acidity. Easy-to-peel with tender flesh.',
+        characteristics: ['Traditional', 'Rich Flavor', 'Easy Peel', 'Sweet & Balanced'],
+        season: 'December to February',
+        origin: 'Mediterranean'
+      }
+    ]
   },
-  {
-    id: 4,
-    name: 'Avocado',
-    image: '/images/products/products4.jpeg',
-    description: 'Easy-to-peel, Avocado that are perfect for snacking and lunchboxes.',
-    backgroundColor: '#2d5016',
+  grapefruits: {
+    name: 'Grapefruits',
+    description: 'Refreshing and healthy Cyprus grapefruits',
+    products: [
+      {
+        id: 12,
+        name: 'White Grapefruit',
+        image: '/images/products/products6.jpeg',
+        description: 'Large, round fruit with smooth yellow skin and no pink blush. Juicy yellow flesh with sweet-tart flavor and balanced acidity. The least sweet but classic grapefruit taste.',
+        characteristics: ['Large Size', 'Yellow Flesh', 'Sweet-Tart', 'Classic Flavor'],
+        season: 'Winter to Early Spring',
+        origin: 'Caribbean'
+      },
+      {
+        id: 13,
+        name: 'Pink Grapefruit',
+        image: '/images/products/products9.jpeg',
+        description: 'Medium to large grapefruit with pink-blushed skin and pink flesh. Sweeter than white varieties with rich color and high lycopene content. Perfect for fresh eating and juicing.',
+        characteristics: ['Pink Flesh', 'Sweeter', 'Rich in Lycopene', 'Juicy'],
+        season: 'Fall to Spring',
+        origin: 'Texas, USA'
+      }
+    ]
   },
-  {
-    id: 5,
-    name: 'Fresh Mangoes',
-    image: '/images/products/products5.jpeg',
-    description: 'Bright, mangoes.',
-    backgroundColor: '#ffd300',
-  },
-  {
-    id: 6,
-    name: 'Premium Grapefruits',
-    image: '/images/products/products6.jpeg',
-    description: 'Sweet and tangy grapefruits packed with vitamins and refreshing flavor.',
-    backgroundColor: '#ff8c42',
-  },
-  {
-    id: 7,
-    name: 'Organic oranges',
-    image: '/images/products/products7.jpeg',
-    description: 'Aromatic oranges ideal for cocktails, cooking, and garnishes.',
-    backgroundColor: '#4a7c2e',
-  },
-  {
-    id: 8,
-    name: 'Sweet Clementines',
-    image: '/images/products/products8.jpeg',
-    description: 'Small, sweet citrus fruits that are easy to peel and perfect for snacking.',
-    backgroundColor: '#ffd300',
-  },
-  {
-    id: 9,
-    name: 'Galileo',
-    image: '/images/products/products9.jpeg',
-    description: 'Ruby-red seeds bursting with sweet-tart flavor.',
-    backgroundColor: '#ff8c42',
-  },
-  {
-    id: 10,
-    name: 'Cara cara',
-    image: '/images/products/products10.jpeg',
-    description: 'Sweet, tender red oranges perfect for juice and Mediterranean dishes.',
-    backgroundColor: '#4a7c2e',
-  },
-  {
-    id: 11,
-    name: 'Mandarin',
-    image: '/images/products/products11.jpeg',
-    description: 'Plump, sweet mandarines grown in Cyprus ideal sunshine.',
-    backgroundColor: '#ffd300',
-  },
-  {
-    id: 12,
-    name: 'More tangerine',
-    image: '/images/products/products12.jpeg',
-    description: 'Rich, sweet tangerine perfect for energy and natural sweetening.',
-    backgroundColor: '#2d5016',
-  },
-  {
-    id: 13,
-    name: 'Tangerine',
-    image: '/images/products/products13.jpeg',
-    description: 'Juicy, fragrant tangerine with perfect balance of sweetness and acidity.',
-    backgroundColor: '#ff8c42',
-  },
-  {
-    id: 14,
-    name: 'Sweet avoc',
-    image: '/images/products/products14.jpeg',
-    description: 'Smooth-skinned, sweet stone fruits perfect for summer enjoyment.',
-    backgroundColor: '#ffd300',
-  },
-  {
-    id: 15,
-    name: 'Premium avocado',
-    image: '/images/products/products15.jpeg',
-    description: 'Sweet-tart plums with rich color and excellent nutritional value.',
-    backgroundColor: '#4a7c2e',
-  },
-];
+  avocados: {
+    name: 'Avocados',
+    description: 'Creamy and nutritious Cyprus avocados',
+    products: [
+      {
+        id: 14,
+        name: 'Premium Hass Avocado',
+        image: '/images/products/products3.jpeg',
+        description: 'The classic avocado with dark, pebbled skin that turns black when ripe. Creamy, rich flesh with nutty flavor. Perfect for guacamole, salads, and toast.',
+        characteristics: ['Creamy Texture', 'Nutty Flavor', 'Ripe When Black', 'Versatile'],
+        season: 'Year-round',
+        origin: 'California/Mexico'
+      },
+      {
+        id: 15,
+        name: 'Fuerte Avocado',
+        image: '/images/products/products4.jpeg',
+        description: 'Large pear-shaped avocado with smooth, thin green skin. Creamy, mild flavor with lower oil content. Excellent for slicing and fresh preparations.',
+        characteristics: ['Large Size', 'Smooth Skin', 'Mild Flavor', 'Lower Oil'],
+        season: 'Year-round',
+        origin: 'California'
+      },
+      {
+        id: 16,
+        name: 'Lamb Hass Avocado',
+        image: 'https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?w=600&q=80',
+        description: 'A premium summer hybrid of Hass and Gwen, prized for its larger fruit size and rich, creamy texture. The skin darkens to purplish-black when ripe, with dense, buttery flesh that boasts a complex nutty flavor. Excellent oil content makes it ideal for both fresh eating and culinary applications.',
+        characteristics: ['Large Size', 'Buttery & Rich', 'Summer Season', 'High Oil Content'],
+        season: 'May to November',
+        origin: 'California, USA'
+      },
+      {
+        id: 17,
+        name: 'Gwen Avocado',
+        image: 'https://images.unsplash.com/photo-1601039641847-7857b994d704?w=600&q=80',
+        description: 'A grandchild of the Hass variety, Gwen produces plump, oval fruits with thick, pebbled green skin that peels easily. Its golden-green flesh is exceptionally creamy with a rich, buttery taste that rivals the Hass. Known for heavy yields and compact tree size, making it a favorite among growers.',
+        characteristics: ['Plump & Oval', 'Thick Skin', 'Creamy Flesh', 'Heavy Yields'],
+        season: 'February to October',
+        origin: 'California, USA'
+      },
+      {
+        id: 18,
+        name: 'Pinkerton Avocado',
+        image: 'https://images.unsplash.com/photo-1590005354167-6da97870c757?w=600&q=80',
+        description: 'Distinguished by its elongated pear shape and deep green, slightly pebbled skin. Pinkerton offers an exceptionally high flesh-to-seed ratio with a small, tight seed that maximizes the creamy, pale-green interior. Its smooth, rich flavor has subtle herbal notes, making it a chef\'s favorite for refined dishes.',
+        characteristics: ['Elongated Shape', 'Small Seed', 'High Flesh Ratio', 'Herbal Notes'],
+        season: 'November to April',
+        origin: 'California, USA'
+      },
+      {
+        id: 19,
+        name: 'Reed Avocado',
+        image: 'https://images.unsplash.com/photo-1560155016-7719ae403da4?w=600&q=80',
+        description: 'A standout summer variety with a distinctive round, softball-like shape and thick green skin that remains green when ripe. Reed\'s golden-yellow flesh is exceptionally creamy and bold in flavor—often described as the most buttery of all avocado varieties. Its large seed pops out cleanly, leaving generous portions of velvety fruit.',
+        characteristics: ['Round Shape', 'Stays Green', 'Bold & Buttery', 'Summer Season'],
+        season: 'June to October',
+        origin: 'California, USA'
+      },
+      {
+        id: 20,
+        name: 'Galil Avocado',
+        image: 'https://images.unsplash.com/photo-1519162808019-7de1683fa2ad?w=600&q=80',
+        description: 'An Israeli-bred variety cultivated in Cyprus\'s Mediterranean climate. Galil produces medium-large fruits with smooth, glossy green skin and a refined, mild-sweet flavor. Its silky flesh has a delicate, clean taste with lower oil content, making it perfect for health-conscious consumers. Known for excellent shelf life and consistent quality.',
+        characteristics: ['Glossy Green', 'Mild & Sweet', 'Lower Oil', 'Long Shelf Life'],
+        season: 'October to March',
+        origin: 'Israel'
+      }
+    ]
+  }
+};
+
+// Get all products flattened for backward compatibility
+export const products = Object.values(productCategories).flatMap(category => category.products);
 
 // Partners/Community data
 export const partners = [
