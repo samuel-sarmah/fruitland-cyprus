@@ -101,16 +101,13 @@ const ProductGallery = () => {
                 />
                 
                 {/* Gradient Overlay for Text Readability */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/60 to-transparent opacity-100" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70  to-transparent opacity-100" />
                 
                 {/* Product Info Overlay */}
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                   <h3 className="text-xl font-bold mb-2">
                     {product.name}
                   </h3>
-                  <p className="text-white/90 text-sm leading-relaxed mb-4 line-clamp-2">
-                    {product.description}
-                  </p>
                   <div className="flex items-center gap-2 text-yellow-300 font-semibold text-sm">
                     View Details
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
