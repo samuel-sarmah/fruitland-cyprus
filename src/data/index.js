@@ -3,7 +3,7 @@ export const heroSlides = [
   {
     id: 1,
     title: 'Sun-Ripened Fruits',
-    subtitle: 'Premium quality oranges, avocado,  mangoes, and grapefruits grown in the fertile soils of Cyprus',
+    subtitle: 'Premium quality avocados, mangoes, oranges, tangerines and other citrus varieties grown in the fertile soils of Cyprus',
     backgroundImage: '/images/products/haden.jpg',
     ctaText: 'Explore Our Fruits',
     ctaLink: '/products',
