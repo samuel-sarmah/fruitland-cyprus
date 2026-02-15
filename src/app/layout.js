@@ -15,16 +15,16 @@ const poppins = Poppins({
 export const metadata = {
   title: {
     template: '%s | Fruitlandcyprus',
-    default: 'Premium Fruits - Farm Direct from Cyprus',
+    default: 'Premium Fruits from Cyprus',
   },
-  description: 'Family-owned fruit farm providing fresh oranges, lemons, and grapefruits directly from our Cyprus orchards to your table since 2003.',
-  metadataBase: new URL('https://fruitland-cy.com'),
+  description: 'Family-owned fruit farm providing fresh avocadoes, mangoes, oranges, tangerines, and other citrus varieties directly from our Cyprus orchards to your table since 2003.',
+  metadataBase: new URL('https://fruitlandcyprus.com'),
   openGraph: {
     title: 'Fruitlandcyprus - Premium Fruits',
     description: 'Fresh, sun-ripened fruits grown in Cyprus and delivered direct from our family farm.',
     type: 'website',
     locale: 'en_US',
-    url: 'https://fruitland-cy.com',
+    url: 'https://fruitlandcyprus.com',
   },
 };
 
