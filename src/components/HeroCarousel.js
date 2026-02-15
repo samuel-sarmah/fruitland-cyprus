@@ -1,6 +1,5 @@
 'use client';
 
-import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { heroSlides } from '@/data';
 import useCarousel from '@/hooks/useCarousel';
 import { useAppStore } from '@/lib/store';
