@@ -1,12 +1,17 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
+import { useSearchParams } from 'next/navigation';
 import { productCategories } from '@/data';
 import ProductModal from '@/components/ProductModal';
 import { ChevronDown } from 'lucide-react';
 
 const ProductGallery = () => {
-  const [selectedCategory, setSelectedCategory] = useState('all');
+  const searchParams = useSearchParams();
+  const categoryParam = searchParams.get('category');
+  const [selectedCategory, setSelectedCategory] = useState(
+    categoryParam && Object.keys(productCategories).includes(categoryParam) ? categoryParam : 'all'
+  );
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);

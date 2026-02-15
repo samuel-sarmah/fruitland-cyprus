@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import ProductGallery from '@/components/ProductGallery';
@@ -22,7 +23,9 @@ export default function Products() {
         </section>
 
         {/* Product Gallery with Categories */}
-        <ProductGallery />
+        <Suspense fallback={<div className="py-16 text-center">Loading...</div>}>
+          <ProductGallery />
+        </Suspense>
       </main>
       <Footer />
     </div>

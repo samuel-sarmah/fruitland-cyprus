@@ -1,11 +1,11 @@
 import { productCategories } from '@/data';
 
 const ProductShowcase = () => {
-const categories = Object.values(productCategories).map(category => ({
+const categories = Object.entries(productCategories).map(([key, category]) => ({
     name: category.name,
     image: category.products[0]?.image || '/images/products/default.jpeg',
     description: category.description,
-    link: `/products?category=${Object.keys(productCategories).find(key => productCategories[key] === category)?.replace('s', '') || 'all'}`
+    link: `/products?category=${key}`
   }));
 
   return (
