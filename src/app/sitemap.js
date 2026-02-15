@@ -1,25 +1,25 @@
 export default function sitemap() {
   return [
     {
-      url: 'https://fruitland-cy.com',
+      url: 'https://fruitlandcyprus.com',
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 1,
     },
     {
-      url: 'https://fruitland-cy.com/products',
+      url: 'https://fruitlandcyprus.com/products',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://fruitland-cy.com/about',
+      url: 'https://fruitlandcyprus.com/about',
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.5,
     },
     {
-      url: 'https://fruitland-cy.com/contact',
+      url: 'https://fruitlandcyprus.com/contact',
       lastModified: new Date(),
       changeFrequency: 'yearly',
       priority: 0.7,
