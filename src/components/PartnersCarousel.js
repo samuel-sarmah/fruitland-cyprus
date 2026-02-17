@@ -1,10 +1,11 @@
 'use client';
 
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { partners } from '@/data';
+import { partners as fallbackPartners } from '@/data';
 import useCarousel from '@/hooks/useCarousel';
 
-const PartnersCarousel = () => {
+const PartnersCarousel = ({ partners: partnersProp }) => {
+  const partners = partnersProp?.length ? partnersProp : fallbackPartners;
   const { currentIndex, next: nextSlide, prev: prevSlide, goTo: goToSlide } = useCarousel(partners, 4000);
 
   return (
