@@ -5,16 +5,19 @@ import ProductShowcase from '@/components/ProductShowcase';
 import PartnersCarousel from '@/components/PartnersCarousel';
 import CtaSection from '@/components/CtaSection';
 import Footer from '@/components/Footer';
+import { getHomeContent } from '@/sanity/queries';
 
-export default function Home() {
+export default async function Home() {
+  const sanity = await getHomeContent();
+
   return (
     <div className="min-h-screen">
       <Navigation />
       <main>
-        <HeroCarousel />
-        <FeatureGrid />
-        <ProductShowcase />
-        <PartnersCarousel />
+        <HeroCarousel slides={sanity?.heroSlides} />
+        <FeatureGrid features={sanity?.features} />
+        <ProductShowcase categories={sanity?.productCategories} />
+        <PartnersCarousel partners={sanity?.partners} />
         <CtaSection />
       </main>
       <Footer />
