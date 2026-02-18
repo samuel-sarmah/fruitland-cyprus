@@ -1,3 +1,21 @@
+// Singleton types — only one document of each type should exist
+const SINGLETON_TYPES = ['aboutPage', 'contactPage', 'ctaSection', 'siteSettings']
+
+// Helper: create a list item that opens directly to a single document editor
+const singletonListItem = (S, typeName, title) =>
+  S.listItem()
+    .title(title)
+    .id(typeName)
+    .child(
+      S.document()
+        .schemaType(typeName)
+        .documentId(typeName)
+        .title(title)
+    )
+
+export const singletonActions = new Set(['publish', 'discardChanges', 'restore'])
+export const singletonTypes = new Set(SINGLETON_TYPES)
+
 // https://www.sanity.io/docs/structure-builder-cheat-sheet
 export const structure = (S) =>
   S.list()
@@ -13,7 +31,6 @@ export const structure = (S) =>
               S.documentTypeListItem('heroSlide').title('Hero Slides'),
               S.documentTypeListItem('feature').title('Features'),
               S.documentTypeListItem('partner').title('Partners'),
-              S.documentTypeListItem('ctaSection').title('CTA Section'),
             ])
         ),
       // Products
@@ -28,10 +45,11 @@ export const structure = (S) =>
             ])
         ),
       S.divider(),
-      // Pages
-      S.documentTypeListItem('aboutPage').title('About Page'),
-      S.documentTypeListItem('contactPage').title('Contact Page'),
+      // Singleton pages — click to edit directly
+      singletonListItem(S, 'aboutPage', 'About Page'),
+      singletonListItem(S, 'contactPage', 'Contact Page'),
+      singletonListItem(S, 'ctaSection', 'CTA Section'),
       S.divider(),
       // Settings
-      S.documentTypeListItem('siteSettings').title('Site Settings'),
+      singletonListItem(S, 'siteSettings', 'Site Settings'),
     ])
