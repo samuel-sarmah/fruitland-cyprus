@@ -7,6 +7,8 @@ export default {
     { name: 'key', title: 'URL Key', type: 'string', description: 'e.g. mangoes, oranges', validation: (Rule) => Rule.required() },
     { name: 'name', title: 'Display Name', type: 'string', validation: (Rule) => Rule.required() },
     { name: 'description', title: 'Description', type: 'text', rows: 3 },
-    { name: 'products', title: 'Products', type: 'array', of: [{ type: 'productItem' }] },
   ],
+  preview: {
+    select: { title: 'name', subtitle: 'key' },
+  },
 };
