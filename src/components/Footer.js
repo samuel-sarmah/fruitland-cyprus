@@ -37,6 +37,11 @@ const Footer = () => {
                   Contact
                 </a>
               </li>
+              <li>
+                <a href="/sustainability" className="text-gray-200 hover:text-[#ffd700] transition-colors focus:outline-none focus:ring-2 focus:ring-[#ffd700] rounded">
+                  Sustainability
+                </a>
+              </li>
             </ul>
           </div>
 
