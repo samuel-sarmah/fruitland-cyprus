@@ -2,8 +2,10 @@ import { Suspense } from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import ProductGallery from '@/components/ProductGallery';
+import { getProductCategories } from '@/sanity/queries';
 
-export default function Products() {
+export default async function Products() {
+  const categories = await getProductCategories();
   return (
     <div className="min-h-screen">
       <Navigation />
@@ -24,7 +26,7 @@ export default function Products() {
 
         {/* Product Gallery with Categories */}
         <Suspense fallback={<div className="py-16 text-center">Loading...</div>}>
-          <ProductGallery />
+          <ProductGallery productCategories={categories} />
         </Suspense>
       </main>
       <Footer />

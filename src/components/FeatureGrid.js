@@ -1,6 +1,7 @@
-import { features } from '@/data';
+import { features as fallbackFeatures } from '@/data';
 
-const FeatureGrid = () => {
+const FeatureGrid = ({ features: featuresProp }) => {
+  const features = featuresProp?.length ? featuresProp : fallbackFeatures;
   return (
     <section className="py-10 md:py-15 bg-white">
       <div className="container mx-auto px-4">

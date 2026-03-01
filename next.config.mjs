@@ -6,7 +6,10 @@ const nextConfig = {
   },
   experimental: {
     optimizePackageImports: ['lucide-react']
-  }
+  },
+  turbopack: {
+    root: import.meta.dirname,
+  },
 };
 
 export default nextConfig;

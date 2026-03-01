@@ -1,10 +1,11 @@
 'use client';
 
-import { heroSlides } from '@/data';
+import { heroSlides as fallbackSlides } from '@/data';
 import useCarousel from '@/hooks/useCarousel';
 import { useAppStore } from '@/lib/store';
 
-const HeroCarousel = () => {
+const HeroCarousel = ({ slides }) => {
+  const heroSlides = slides?.length ? slides : fallbackSlides;
   const { setCurrentSlide: setGlobalSlide } = useAppStore();
   const { currentIndex: currentSlide, next: nextSlide, prev: prevSlide, goTo: goToSlide } = useCarousel(heroSlides, 6000);
 

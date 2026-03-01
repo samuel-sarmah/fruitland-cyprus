@@ -1,13 +1,13 @@
 'use client';
 
 import { useState } from 'react';
-import { productCategories } from '@/data';
-import { useParams } from 'next/navigation';
+import { productCategories as fallbackCategories } from '@/data';
 
-const ProductDetail = () => {
-  const params = useParams();
+const ProductDetail = ({ productId, productCategories: categoriesProp }) => {
+  const productCategories = categoriesProp && Object.keys(categoriesProp).length
+    ? categoriesProp : fallbackCategories;
   const allProducts = Object.values(productCategories).flatMap(category => category.products);
-  const product = allProducts.find(p => p.id === parseInt(params.id));
+  const product = allProducts.find(p => p.id === Number(productId));
   const [isExpanded, setIsExpanded] = useState(false);
 
   if (!product) {

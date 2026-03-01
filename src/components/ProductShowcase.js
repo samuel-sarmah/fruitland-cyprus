@@ -1,7 +1,9 @@
-import { productCategories } from '@/data';
+import { productCategories as fallbackCategories } from '@/data';
 
-const ProductShowcase = () => {
-const categories = Object.entries(productCategories).map(([key, category]) => ({
+const ProductShowcase = ({ categories: categoriesProp }) => {
+  const productCategories = categoriesProp && Object.keys(categoriesProp).length
+    ? categoriesProp : fallbackCategories;
+  const categories = Object.entries(productCategories).map(([key, category]) => ({
     name: category.name,
     image: category.products[0]?.image || '/images/products/default.jpeg',
     description: category.description,
