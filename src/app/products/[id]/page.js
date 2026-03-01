@@ -1,13 +1,16 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import ProductDetail from '@/components/ProductDetail';
+import { productCategories } from '@/data';
 
-export default function ProductPage({ params }) {
+export default async function ProductPage({ params }) {
+  const { id } = await params;
+
   return (
     <div className="min-h-screen">
       <Navigation />
       <main>
-        <ProductDetail productId={params.id} />
+        <ProductDetail productId={id} productCategories={productCategories} />
       </main>
       <Footer />
     </div>
