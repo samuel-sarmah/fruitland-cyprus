@@ -39,3 +39,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# sanity
+.sanity/
+
+# build output
+dist/
+
+# documentation (not to be committed)
+DELIVERY_SUMMARY.md
+IMPLEMENTATION_CHECKLIST.md
+MEETING_PREP_NOTES.md
+SANITY_CLIENT_SETUP_GUIDE.md
