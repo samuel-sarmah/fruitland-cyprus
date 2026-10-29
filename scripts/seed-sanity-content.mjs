@@ -1,8 +1,10 @@
+import dotenv from 'dotenv';
+dotenv.config({ path: '.env.local' });
 import fs from 'node:fs';
 import path from 'node:path';
 import { createClient } from '@sanity/client';
 
-const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
+const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'dulbgfgs';
 const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET || 'production';
 const token = process.env.SANITY_API_WRITE_TOKEN;
 
@@ -17,7 +19,7 @@ if (!token) {
 const client = createClient({
   projectId,
   dataset,
-  apiVersion: '2024-10-01',
+  apiVersion: '2024-03-01',
   token,
   useCdn: false,
 });
@@ -227,6 +229,12 @@ async function uploadImage(source) {
   if (source.startsWith('http://') || source.startsWith('https://')) {
     const response = await fetch(source);
     if (!response.ok) throw new Error(`Failed to fetch remote image: ${source}`);
+    const contentType = response.headers.get('content-type') || '';
+    if (contentType.includes('svg') || source.includes('/svg')) {
+      console.warn(`Skipping SVG file: ${source}`);
+      uploadCache.set(source, null);
+      return null;
+    }
     const arrayBuffer = await response.arrayBuffer();
     const buffer = Buffer.from(arrayBuffer);
     const filename = source.split('/').pop()?.split('?')[0] || `image-${Date.now()}.jpg`;
